@@ -44,11 +44,6 @@
       margin: 0;
     }
 
-    p.subtitle {
-      margin-top: 6px;
-      font-size: 15px;
-    }
-
     details {
       margin-bottom: 56px;
     }
@@ -90,79 +85,38 @@
     }
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     p {
       margin-top: 16px;
     }
 
+    p.pub-heading {
+      margin-top: 32px;
+      margin-bottom: 4px;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    p.contact {
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
     .block { margin-top: 18px; }
 
-    /* ---------------------- */
-    /* THEME 1 (soft dark minimal) */
-    /* ---------------------- */
-    body.theme1 {
-      background-color: #262626;
-      color: #d8d2cc;
-    }
-    body.theme1 a { color: #a8b3bd; }
-
-    /* ---------------------- */
-    /* THEME 2 (lighter editorial dark) */
-    /* ---------------------- */
-    body.theme2 {
-      background-color: #2f2f2f;
-      color: #e2ddd7;
-    }
-    body.theme2 a { color: #b6c2cc; }
-
-    /* ---------------------- */
-    /* THEME 3 (warm sepia academic) */
-    /* ---------------------- */
-    body.theme3 {
-      background-color: #2b2622;
-      color: #e6dfd6;
-    }
-    body.theme3 a { color: #c7b8a6; }
-
-    /* default theme */
     body { background-color: #262626; color: #d8d2cc; }
     a { color: #a8b3bd; }
-
-    /* theme switcher */
-    .switcher {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      display: flex;
-      gap: 8px;
-    }
-
-    .switcher button {
-      background: transparent;
-      border: 1px solid rgba(255,255,255,0.2);
-      color: inherit;
-      padding: 6px 10px;
-      cursor: pointer;
-      font-family: inherit;
-      font-size: 12px;
-    }
-
   </style>
 </head>
-<body class="theme1">
-
-<div class="switcher">
-  <button onclick="setTheme('theme1')">1</button>
-  <button onclick="setTheme('theme2')">2</button>
-  <button onclick="setTheme('theme3')">3</button>
-</div>
+<body>
 
 <div class="container">
 
   <header>
-    <img class="profile" src="dein-foto.jpg" alt="Profilbild">
+    <img class="profile" src="schwarzweiß.png" alt="Profilbild">
     <div>
       <h1>Dr. Astrid Hähnlein</h1>
     </div>
@@ -171,64 +125,45 @@
   <details open>
     <summary>Über mich & Kontakt</summary>
     <div class="block">
-      <p>Ich forsche und lehre an der Schnittstelle von politischer Theorie, Philosophie und Bildung. In Freiburg unterrichte ich Gemeinschaftskunde, Geschichte, Ethik und Psychologie – Fächer, in denen diese Fragen unmittelbar relevant werden. Meine Forschungsarbeiten gelten der politischen Urteilsbildung in Zeiten umkämpfter Wahrheitsdiskurse, ihren erinnerungskulturellen Voraussetzungen sowie den emotionalen und psychologischen Grundlagen politischer Überzeugungen und Bildung.</p>
-      <p>My work spans research and teaching at the intersection of political theory, philosophy, and education. In Freiburg, I teach politics, history, ethics, and psychology – subjects in which these questions take on immediate relevance. My research centers on political judgment in an age of contested truth, its preconditions in collective memory, and the emotional and psychological foundations of political beliefs and education.<p>
-        Email: <a href="mailto:ihre.email@example.com">astrid[dot]haehnlein[at]posteo.de</a><br>
+      <p>Ich forsche und lehre auf der Schnittstelle von politischer Theorie, Philosophie und Bildung. In Freiburg unterrichte ich Gemeinschaftskunde, Geschichte, Ethik und Psychologie – Fächer, in denen diese Fragen unmittelbar relevant werden. Meine Forschungsarbeiten gelten der politischen Urteilsbildung in Zeiten umkämpfter Wahrheitsdiskurse, ihren erinnerungskulturellen Voraussetzungen sowie den emotionalen und psychologischen Grundlagen politischer Überzeugungen und Bildung.</p>
+      <p>My work spans research and teaching at the intersection of political theory, philosophy, and education. In Freiburg, I teach politics, history, ethics, and psychology – subjects in which these questions take on immediate relevance. My research centers on political judgment in an age of contested truth, its preconditions in collective memory, and the emotional and psychological foundations of political beliefs and education.</p>
+      <p class="contact">
+        Email: <a href="mailto:astrid.haehnlein@posteo.de">astrid[dot]haehnlein[at]posteo.de</a>
       </p>
     </div>
   </details>
 
   <details>
-  <summary>Publikationen</summary>
-  <div class="block">
+    <summary>Publikationen (Auswahl)</summary>
+    <div class="block">
 
-    <p>Monographien</p>
-    <ul>
-      <li>Urteilen und Ereignis. Zur Theorie politischen Denkens nach Hannah Arendt und Karl Jaspers. Basel 2023.</li>
-      
-      <li>Im Gespräch die Welt verstehen. Einführung in das politische Denken Hannah Arendts. Stuttgart 2022 (gemeinsam mit Riescher, Gisela).</li>
-    </ul>
+      <p class="pub-heading">Monographien</p>
+      <ul>
+        <li>Urteilen und Ereignis. Zur Theorie politischen Denkens nach Hannah Arendt und Karl Jaspers. Basel 2023.</li>
+        <li>Im Gespräch die Welt verstehen. Einführung in das politische Denken Hannah Arendts. Stuttgart 2022 (gemeinsam mit Riescher, Gisela).</li>
+      </ul>
 
-    <p>Artikel, Zeitschriftenbeiträge, etc.</p>
-    <ul>
-      <li>„Zur affektiven Wirkung von Algorithmen – Politische Emotionen in Zeiten von Künstlicher Intelligenz“. In: Wohnig, Alexander (u.a.) (Hrsg.): <em>Social Media und KI: Herausforderungen und Chancen für die Politische Bildung</em> 2026 [i. E.].</li>
+      <p class="pub-heading">Aufsätze, Zeitschriftenbeiträge, etc.</p>
+      <ul>
+        <li>„Zur affektiven Wirkung von Algorithmen – Politische Emotionen in Zeiten von Künstlicher Intelligenz". In: Wohnig, Alexander (u.a.) (Hrsg.): <em>Social Media und KI: Herausforderungen und Chancen für die Politische Bildung</em> 2026 [i. E.].</li>
+        <li>„‚Wenn es mehr solcher Geschichten zu erzählen gäbe' – Beispiele des Widerstands gegen den Nationalsozialismus im Denken Hannah Arendts". In: <em>z.B. Zeitschrift zum Beispiel</em>. Themenheft: Hannah Arendts Beispiele (8) 2026 [i. E.].</li>
+        <li>„Zu den Grundlagen politischer Urteilskraft oder: die Schulung der Einbildungskraft als wichtige Baustelle politischer Bildung". In: Anter, Andreas; Schmoldt, Johannes (Hrsg.): <em>Politische Urteilskraft: Ressource der Demokratie?</em> 2026 [i. E.].</li>
+        <li>„Lach doch mal, KI! Didaktische Chancen zwischen Gag und Geist". In: <em>KI und Unterricht</em>. Sonderausgabe WOCHENSCHAU-Themenheft 2026 [i. E.].</li>
+        <li>„Der Holocaust und die Katechismusdebatte – ein Exemplum politischen Urteilens auf dem Prüfstand". In: <em>hannaharendt.net – Zeitschrift für politisches Denken</em> 2026 [i. E.].</li>
+        <li>„Von Wundertätern und Heilsbringern: Einige kritische Rückfragen an den Wunderbegriff bei Hannah Arendt". In: Baesler, Martin (Hrsg.): <em>Handeln und Urteilen: Grundlagen des Freiheitsbegriffs in Hannah Arendts politischem Denken</em>. Baden-Baden 2026 [i. E.].</li>
+        <li>„Digitaler Unterrichtstipp: Der NS-Ghettofilm – Propaganda oder Dokumentation?". In: <em>Praxis und Geschichte</em>. Aufstieg des Nationalsozialismus – differenziert (1-2026) 2026, 50.</li>
+        <li>„Was, wenn uns die Shoa abhandenkommt? Über Shoa-Vergleiche im Unterricht". In: <em>Zeitschrift der Didaktik für Gesellschaftswissenschaften</em>. Geographie – Geschichte – Politik – Wirtschaft. Welt(un)ordnung 2025, 36–55.</li>
+        <li>Rezension zu Baratella, Nils; Hueck, Johanna; Zeyer, Kirstin (Hrsg.): <em>Existenz und Freiheit. Karl Jaspers, Hannah Arendt und Heinrich Barth zur Freiheitslehre Augustins</em>. In: <em>Hannah.Arendt.net. Zeitschrift für politisches Denken</em> (14/1) 2024, 142–148.</li>
+        <li>„Briefwechsel: Hannah Arendt". In: Bongardt, Michael; Burckhart, Holger; Gordon, John-Stewart; Nielsen-Sikora, Jürgen (Hrsg.): <em>Hans Jonas-Handbuch. Leben – Werk – Wirkung</em>. Stuttgart 2021, 210–216 (gemeinsam mit Kurbacher, Frauke A.).</li>
+        <li>„Politische Anthropologie und Subjekttheorie". In: Riescher, Gisela; Rosenzweig, Beate; Meine, Anna (Hrsg.): <em>Einführung in die Politische Theorie: Grundlagen – Methoden – Debatten</em>. Stuttgart 2020, 109–125.</li>
+        <li>„Der Ort politischen Urteilsvermögens – Arendt, Jaspers und der ‚Raum der humanitas'". In: <em>HannahArendt.net. Zeitschrift für politisches Denken</em> (9/1) 2018, 1–15.</li>
+        <li>„Politische Lügen – ein ‚konstruktiver' und drei ‚destruktive' Prototypen". In: <em>Diskurs. Zeitschrift für innovative Analysen politischer Praxis</em> (4) 2018, 26–45.</li>
+      </ul>
 
-      <li>„‚Wenn es mehr solcher Geschichten zu erzählen gäbe‘ – Beispiele des Widerstands gegen den Nationalsozialismus im Denken Hannah Arendts“. In: <em>z.B. Zeitschrift zum Beispiel</em>. Themenheft: Hannah Arendts Beispiele (8) 2026 [i. E.].</li>
-
-      <li>„Zu den Grundlagen politischer Urteilskraft oder: die Schulung der Einbildungskraft als wichtige Baustelle politischer Bildung“. In: Anter, Andreas; Schmoldt, Johannes (Hrsg.): <em>Politische Urteilskraft: Ressource der Demokratie?</em> 2026 [i. E.].</li>
-
-      <li>„Lach doch mal, KI! Didaktische Chancen zwischen Gag und Geist“. In: <em>KI und Unterricht</em>. Sonderausgabe WOCHENSCHAU-Themenheft 2026 [i. E.].</li>
-
-      <li>„Der Holocaust und die Katechismusdebatte – ein Exemplum politischen Urteilens auf dem Prüfstand“. In: <em>hannaharendt.net – Zeitschrift für politisches Denken</em> 2026 [i. E.].</li>
-
-      <li>„Von Wundertätern und Heilsbringern: Einige kritische Rückfragen an den Wunderbegriff bei Hannah Arendt“. In: Baesler, Martin (Hrsg.): <em>Handeln und Urteilen: Grundlagen des Freiheitsbegriffs in Hannah Arendts politischem Denken</em>. Baden-Baden 2026 [i. E.].</li>
-
-      <li>„Digitaler Unterrichtstipp: Der NS-Ghettofilm – Propaganda oder Dokumentation?“. In: <em>Praxis und Geschichte</em>. Aufstieg des Nationalsozialismus – differenziert (1-2026) 2026, 50.</li>
-
-      <li>„Was, wenn uns die Shoa abhandenkommt? Über Shoa-Vergleiche im Unterricht“. In: <em>Zeitschrift der Didaktik für Gesellschaftswissenschaften</em>. Geographie – Geschichte – Politik – Wirtschaft. Welt(un)ordnung 2025, 36–55.</li>
-
-      <li>Rezension zu Baratella, Nils; Hueck, Johanna; Zeyer, Kirstin (Hrsg.): <em>Existenz und Freiheit. Karl Jaspers, Hannah Arendt und Heinrich Barth zur Freiheitslehre Augustins</em>. In: <em>Hannah.Arendt.net. Zeitschrift für politisches Denken</em> (14/1) 2024, 142–148.</li>
-
-      <li>„Briefwechsel: Hannah Arendt“. In: Bongardt, Michael; Burckhart, Holger; Gordon, John-Stewart; Nielsen-Sikora, Jürgen (Hrsg.): <em>Hans Jonas-Handbuch. Leben – Werk – Wirkung</em>. Stuttgart 2021, 210–216 (gemeinsam mit Kurbacher, Frauke A.).</li>
-
-      <li>„Politische Anthropologie und Subjekttheorie“. In: Riescher, Gisela; Rosenzweig, Beate; Meine, Anna (Hrsg.): <em>Einführung in die Politische Theorie: Grundlagen – Methoden – Debatten</em>. Stuttgart 2020, 109–125.</li>
-
-      <li>„Der Ort politischen Urteilsvermögens – Arendt, Jaspers und der ‚Raum der humanitas‘“. In: <em>HannahArendt.net. Zeitschrift für politisches Denken</em> (9/1) 2018, 1–15.</li>
-
-      <li>„Politische Lügen – ein ‚konstruktiver‘ und drei ‚destruktive‘ Prototypen“. In: <em>Diskurs. Zeitschrift für innovative Analysen politischer Praxis</em> (4) 2018, 26–45.</li>
-    </ul>
-
-  </div>
-</details>
+    </div>
+  </details>
 
 </div>
-
-<script>
-function setTheme(t) {
-  document.body.classList.remove('theme1','theme2','theme3');
-  document.body.classList.add(t);
-}
-</script>
 
 </body>
 </html>
